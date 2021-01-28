@@ -7,7 +7,8 @@ import '../bloc/button_bloc.dart';
 class Button extends StatelessWidget {
 
   final AnimationController controller;
-  const Button({this.controller});
+//  名前付き引数を入力必須に。
+  const Button({@required this.controller});
 
   @override
   Widget build(BuildContext context) {
