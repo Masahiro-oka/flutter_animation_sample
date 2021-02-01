@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-
 import '../controller/animate_controller.dart';
 import '../components/button.dart';
-import 'package:fluttertesttype/bloc/button_bloc.dart';
 import 'package:fluttertesttype/components/button_components.dart';
 
 
@@ -54,7 +51,6 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
 
   @override
   Widget build(BuildContext context) {
-    final bloc = Provider.of<ButtonBloc>(context);
 //    速度をdefoltのspeed/代入している値になる。下だったらデフォルト/2の速さになっている。
 //    timeDilation = 2.0;
     return Container(
