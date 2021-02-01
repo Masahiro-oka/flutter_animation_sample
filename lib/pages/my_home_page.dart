@@ -76,7 +76,11 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        Button(controller: controller)
+                        Button(controller: controller),
+                        RaisedButton(
+                          child: Text('Go to Coordinate'),
+                          onPressed: () => Navigator.of(context).pushNamed('/1'),
+                        )
                       ],
                     ),
                   ),
